@@ -8,16 +8,13 @@ const progressContainer = document.querySelector('.progress-container');
 const title = document.querySelector('#title');
 const cover = document.querySelector('#cover');
 
-// song titles
+
 const songs = ['Rita & Fidan - Luje Mindilin'];
 
-// keep tracking of songs
 let songIndex = 0
 
-// initially load song info DOM
 loadSong(songs[songIndex])
 
-// update song details
 function loadSong(song){
     title.innerText = song
     audio.src = `music/${song}.mp3`;
@@ -76,7 +73,6 @@ function setProgress(e){
     audio.currentTime = (clickX / width) * duration
 }
 
-//Event listeners
 playBtn.addEventListener('click',() => {
     const isPlaying = musicContainer.classList.contains('play')
     if(isPlaying){
@@ -86,7 +82,6 @@ playBtn.addEventListener('click',() => {
     }
 })
 
-//Change songs
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
 
