@@ -9,7 +9,11 @@ const title = document.querySelector('#title');
 const cover = document.querySelector('#cover');
 
 
-const songs = ['Rita & Fidan - Luje Mindilin'];
+const songs = ['Rita & Fidan - Luje Mindilin',
+'Fidan & Rita- Me tupana ndizet zemra',
+'Rita x Fidan x DJ Gimi-O - Ty tka rritur nana',
+'2TON - EMOCIONONA','KIDA x BUTRINT IMERI - AMPM'
+];
 
 let songIndex = 0
 
